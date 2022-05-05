@@ -1,3 +1,11 @@
 {
-  "extends": "next/core-web-vitals"
+	"root": true,
+	"extends": [
+		"@techmmunity/eslint-config/common",
+		"@techmmunity/eslint-config/ts-nextjs"
+	],
+	"rules": {
+		"@next/next/no-script-in-document": "off",
+		"@next/next/link-passhref": "off"
+	}
 }
